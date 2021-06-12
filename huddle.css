@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+/* font-family: 'Open Sans', sans-serif; */
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Very-Pale-Blue: hsl(207, 100%, 98%);
+  --fw-large: 700;
+  font-size: 16px;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: var(--Very-Dark-Cyan);
+}
+/* removed decoration from all anchor tags */
+a {
+  text-decoration: none;
+}
+p + a,
+h1 + a {
+  background-color: var(--Pink);
+  color: var(--Very-Pale-Blue);
+  padding: 0.8em 3em;
+  border-radius: 40px;
+  margin: 1rem 0 4rem 0;
+  box-shadow: 0px 5px 10px rgba(141, 141, 141, 0.3),
+    0px 1px 5px rgba(128, 128, 128, 0.2);
+  font-size: 0.8rem;
+}
+/* controls width of the large images */
+.large-img {
+  width: 100%;
+}
+/* this container holds everything on this page thus this controls the gap between each row or column */
+.grid-cont {
+  padding: 2rem 0;
+  display: grid;
+  grid-gap: 6.5rem;
+}
+.size {
+  width: 85%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+nav img {
+  width: 28%;
+}
+nav a {
+  color: var(--Light-Pink);
+  padding: 0.3em 1.2em;
+  border: 1px solid var(--Light-Pink);
+  border-radius: 30px;
+  box-shadow: 0px 0p 10px hsla(322, 100%, 66%, 0.856);
+  background: transparent;
+}
+/* second section start */
+.same {
+  display: grid;
+  place-items: center;
+  grid-gap: 1.8rem;
+}
+.stats-cont {
+  margin: 6.2rem auto;
+}
+.stats img {
+  width: 28px;
+  margin-right: 100%;
+  /* margin right to push the little images all the way to the left */
+}
+.stats span {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-style: var(--fs-body);
+}
+.stats p {
+  opacity: 0.6;
+}
+/* making space between the two stats under the first large picture */
+.stats + .stats {
+  margin-top: 5rem;
+}
+/* increased the grid gap here and thanks to specificity it was possible i increased the grid gap for this section alone to 12rem */
+
+/* grow together start */
+.size:nth-of-type(3) > .same {
+  grid-gap: 12rem;
+  margin: 0 auto;
+}
+.same__sec3:first-child {
+  background-image: url(/huddle-landing-page-with-curved-sections-master/bg-section-top-mobile-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  outline: 1px solid black;
+  width: 100vw;
+  height: auto;
+}
+
+.size:nth-of-type(3) > .same img {
+  width: 80%;
+  margin-bottom: 4rem;
+}
+.size:nth-of-type(3) > .same p {
+  margin: 1rem auto;
+  width: clamp(70%, 80%, 100%);
+}
+.size:nth-of-type(3) {
+  width: 100%;
+  margin-top: -10rem;
+  padding-top: 10rem;
+}
+/* grow together end */
