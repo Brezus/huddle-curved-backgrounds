@@ -53,6 +53,7 @@ h1 + a {
 .size {
   width: 85%;
   margin: 0 auto;
+  max-width: 700px;
 }
 nav {
   display: flex;
@@ -209,7 +210,7 @@ nav a {
   background-color: var(--Very-Dark-Cyan);
   color: #ffffff;
   text-align: left;
-  padding: 4rem 0 2rem 0;
+  padding: 6rem 0 2rem 0;
 }
 /* the waves shape */
 svg.reduced {
@@ -245,7 +246,27 @@ svg.reduced {
   font-weight: 700;
   border-radius: 4px;
 }
+.huddle {
+  display: grid;
+  grid-gap: 1.4rem;
+  margin-top: 4rem;
+}
 .huddle img {
-  filter: invert(88%) sepia(19%) saturate(109%) hue-rotate(188deg)
+  filter: invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg)
     brightness(105%) contrast(105%);
+}
+.extra {
+  display: flex;
+}
+.extra p,
+.extra i + i {
+  padding-left: 1rem;
+}
+.extra i {
+  font-size: 2rem;
+}
+.extra-extra {
+  display: grid;
+  grid-gap: 1.4rem;
+  padding: 1rem 0;
 }
