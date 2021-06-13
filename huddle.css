@@ -32,12 +32,13 @@ p + a,
 h1 + a {
   background-color: var(--Pink);
   color: var(--Very-Pale-Blue);
-  padding: 0.8em 3em;
+  padding: 1.4em 4em;
   border-radius: 40px;
   margin: 1rem 0 4rem 0;
   box-shadow: 0px 5px 10px rgba(141, 141, 141, 0.3),
     0px 1px 5px rgba(128, 128, 128, 0.2);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 /* controls width of the large images */
 .large-img {
@@ -102,20 +103,88 @@ nav a {
 /* grow together start */
 .size:nth-of-type(3) > .same {
   grid-gap: 12rem;
-  margin: 0 auto;
+  margin: -5rem auto 0 auto;
 }
 .same__sec3:first-child {
-  background-image: url(/huddle-landing-page-with-curved-sections-master/bg-section-top-mobile-1.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  outline: 1px solid black;
-  width: 100vw;
-  height: auto;
+  padding-top: 12rem;
+  position: relative;
+  background-color: var(--Very-Pale-Blue);
+  padding-bottom: 8rem;
+}
+.same__sec3:last-child {
+  background-color: var(--Very-Pale-Blue);
+}
+.same__sec3:last-child p {
+  padding-bottom: 4rem;
 }
 
+/* added padding top to the last image in grow together so the curvy bg would appear higher */
+.same__sec3:last-child img {
+  padding-top: 4rem;
+}
+/* wavy bg css start */
+.custom-shape-divider-top-1623601280 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1623601280 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1623601280 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1623601280 svg {
+    width: calc(100% + 1.3px);
+    height: 113px;
+  }
+}
+
+.custom-shape-divider-bottom-1623601478 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1623601478 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1623601478 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1623601478 svg {
+    width: calc(153% + 1.3px);
+    height: 104px;
+  }
+}
+.same__sec3 svg {
+  display: block;
+}
+/* wavy bg css end */
 .size:nth-of-type(3) > .same img {
-  width: 80%;
+  width: 70%;
   margin-bottom: 4rem;
 }
 .size:nth-of-type(3) > .same p {
@@ -128,3 +197,55 @@ nav a {
   padding-top: 10rem;
 }
 /* grow together end */
+/* newsletter section start */
+.b4__myfooter {
+  display: grid;
+  place-items: center;
+  grid-gap: 2rem;
+  margin-bottom: 6.5rem;
+}
+
+.entire_foot {
+  background-color: var(--Very-Dark-Cyan);
+  color: #ffffff;
+  text-align: left;
+  padding: 4rem 0 2rem 0;
+}
+/* the waves shape */
+svg.reduced {
+  margin-bottom: -1rem;
+}
+
+.entire_foot svg {
+  fill: white;
+}
+.news__letter {
+  display: grid;
+  grid-gap: 1.3rem;
+}
+.in-put {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 45px 45px;
+  grid-gap: 1rem;
+}
+.in-put input[type="text"] {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  border: none;
+  border-radius: 4px;
+}
+.in-put a {
+  background-color: var(--Pink);
+  grid-column: 2 / -1;
+  grid-row: 2;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.huddle img {
+  filter: invert(88%) sepia(19%) saturate(109%) hue-rotate(188deg)
+    brightness(105%) contrast(105%);
+}
