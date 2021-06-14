@@ -55,6 +55,7 @@ h1 + a {
   margin: 0 auto;
   max-width: 600px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -102,6 +103,10 @@ nav a {
 /* increased the grid gap here and thanks to specificity it was possible i increased the grid gap for this section alone to 12rem */
 
 /* grow together start */
+.size:nth-child(3) {
+  width: 100%;
+  max-width: 100%;
+}
 .size:nth-of-type(3) > .same {
   grid-gap: 12rem;
   margin: -5rem auto 0 auto;
@@ -111,6 +116,12 @@ nav a {
   position: relative;
   background-color: var(--Very-Pale-Blue);
   padding-bottom: 8rem;
+  /* border: 2px solid black; */
+  width: 100%;
+}
+.controled-width {
+  width: 85%;
+  margin: 0 auto;
 }
 .same__sec3:last-child {
   background-color: var(--Very-Pale-Blue);
