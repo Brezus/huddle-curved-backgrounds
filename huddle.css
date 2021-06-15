@@ -23,6 +23,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: var(--Very-Dark-Cyan);
   font-size: 16px;
+  padding: 2rem 0;
 }
 
 /* removed decoration from all anchor tags */
@@ -47,12 +48,8 @@ h1 + a {
 }
 /* this container holds everything on this page thus this controls the gap between each row or column */
 .grid-cont {
-  padding: 2rem 0;
   display: grid;
   grid-gap: 6.5rem;
-}
-.size {
-  width: 85%;
   margin: 0 auto;
   max-width: 600px;
 }
@@ -137,27 +134,19 @@ nav a {
   position: relative;
 }
 .entire_foot:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   content: "";
   background-image: url(/bg-footer-top-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  display: block;
-  top: -3rem;
+  position: absolute;
+  top: -9vh;
+  width: 100%;
+  height: 10rem;
 }
-@media screen and (min-width: 500px) {
-  .entire_foot:before {
-    top: -4rem;
-  }
+.my__footer {
+  width: 85%;
+  margin: 0 auto;
 }
-@media screen and (min-width: 600px) {
-  .entire_foot:before {
-    top: -5rem;
-  }
-}
-
 .entire_foot svg {
   fill: white;
 }
