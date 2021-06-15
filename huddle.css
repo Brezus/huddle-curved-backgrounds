@@ -112,91 +112,84 @@ nav a {
   margin: -5rem auto 0 auto;
 }
 .same__sec3:first-child {
-  padding-top: 12rem;
   position: relative;
   background-color: var(--Very-Pale-Blue);
-  padding-bottom: 8rem;
-  /* border: 2px solid black; */
   width: 100%;
 }
 .controled-width {
   width: 85%;
   margin: 0 auto;
 }
-.same__sec3:last-child {
+.same__sec3:first-child .controled-width {
+  padding: 6rem 0;
+}
+/* added curve bg positioned it at the top */
+.same__sec3:first-child::before,
+.same__sec3:first-child::after {
+  width: 100%;
+  content: "";
+  background-image: url(bg-section-top-mobile-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 19%;
+}
+.same__sec3:first-child::after {
+  background-image: url(/bg-section-bottom-mobile-1.svg);
+  bottom: -100%;
+}
+/* making the before absolute bg fits when screen size < 700px */
+@media screen and (min-width: 500px) {
+  .same__sec3:first-child::before {
+    bottom: 20%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .same__sec3:first-child::before {
+    bottom: 22%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .same__sec3:first-child::before {
+    bottom: 24%;
+  }
+}
+.second {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+/* making the before absol
+ute bg fits when screen size < 700px
+for some reason the .same last child selector was not 
+working here so i gave this section a class
+name of third */
+.third {
   background-color: var(--Very-Pale-Blue);
-}
-.same__sec3:last-child p {
-  padding-bottom: 4rem;
-}
-
-/* added padding top to the last image in grow together so the curvy bg would appear higher */
-.same__sec3:last-child img {
-  padding-top: 4rem;
-}
-/* wavy bg css start */
-.custom-shape-divider-top-1623601280 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1623601280 svg {
   position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
+  padding: 3rem 0;
 }
-
-.custom-shape-divider-top-1623601280 .shape-fill {
-  fill: #ffffff;
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-top-1623601280 svg {
-    width: calc(100% + 1.3px);
-    height: 113px;
-  }
-}
-
-.custom-shape-divider-bottom-1623601478 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.third:before,
+.third::after {
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+  content: "";
+  background-image: url(/bg-section-top-mobile-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 24%;
 }
-
-.custom-shape-divider-bottom-1623601478 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
+.third::after {
+  background-image: url(/bg-section-bottom-mobile-2.svg);
+  top: 100%;
 }
-
-.custom-shape-divider-bottom-1623601478 .shape-fill {
-  fill: #ffffff;
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-bottom-1623601478 svg {
-    width: calc(153% + 1.3px);
-    height: 104px;
-  }
-}
-.same__sec3 svg {
-  display: block;
-}
-/* wavy bg css end */
 .size:nth-of-type(3) > .same img {
-  width: 70%;
+  width: 80%;
   margin-bottom: 4rem;
 }
 .size:nth-of-type(3) > .same p {
@@ -214,7 +207,8 @@ nav a {
   display: grid;
   place-items: center;
   grid-gap: 2rem;
-  margin-bottom: 6.5rem;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
 }
 
 .entire_foot {
@@ -222,10 +216,28 @@ nav a {
   color: #ffffff;
   text-align: left;
   padding: 6rem 0 2rem 0;
+  position: relative;
 }
-/* the waves shape */
-svg.reduced {
-  margin-bottom: -1rem;
+.entire_foot:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url(/bg-footer-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  top: -3rem;
+}
+@media screen and (min-width: 500px) {
+  .entire_foot:before {
+    top: -4rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .entire_foot:before {
+    top: -5rem;
+  }
 }
 
 .entire_foot svg {
