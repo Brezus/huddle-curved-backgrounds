@@ -10,7 +10,6 @@
   --Very-Dark-Cyan: hsl(192, 100%, 9%);
   --Very-Pale-Blue: hsl(207, 100%, 98%);
   --fw-large: 700;
-  font-size: 16px;
 }
 *,
 *::before,
@@ -23,7 +22,9 @@ body {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   color: var(--Very-Dark-Cyan);
+  font-size: 16px;
 }
+
 /* removed decoration from all anchor tags */
 a {
   text-decoration: none;
@@ -82,6 +83,7 @@ nav a {
 .stats-cont {
   margin: 6.2rem auto;
 }
+
 .stats img {
   width: 28px;
   margin-right: 100%;
@@ -100,6 +102,19 @@ nav a {
 .stats + .stats {
   margin-top: 5rem;
 }
+@media screen and (min-width: 550px) {
+  .stats-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .stats + .stats {
+    margin-top: 0;
+  }
+  .size:nth-child(2) {
+    margin-bottom: 3rem;
+  }
+}
 /* increased the grid gap here and thanks to specificity it was possible i increased the grid gap for this section alone to 12rem */
 
 /* grow together start */
@@ -116,13 +131,23 @@ nav a {
   background-color: var(--Very-Pale-Blue);
   width: 100%;
 }
+
 .controled-width {
   width: 85%;
   margin: 0 auto;
 }
+@media screen and (min-width: 650px) {
+  .controled-width {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+}
 .same__sec3:first-child .controled-width {
   padding: 6rem 0;
 }
+
 /* added curve bg positioned it at the top */
 .same__sec3:first-child::before,
 .same__sec3:first-child::after {
@@ -188,9 +213,15 @@ name of third */
   background-image: url(/bg-section-bottom-mobile-2.svg);
   top: 100%;
 }
-.size:nth-of-type(3) > .same img {
+.same__sec3 img {
   width: 80%;
   margin-bottom: 4rem;
+}
+@media screen and (min-width: 600px) {
+  .same__sec3 img {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
 }
 .size:nth-of-type(3) > .same p {
   margin: 1rem auto;
