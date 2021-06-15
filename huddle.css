@@ -164,10 +164,10 @@ nav a {
 }
 .same__sec3:first-child::after {
   background-image: url(/bg-section-bottom-mobile-1.svg);
-  bottom: -100%;
+  top: 135vw;
 }
 /* making the before absolute bg fits when screen size < 700px */
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 500px) {
   .same__sec3:first-child::before {
     bottom: 20%;
   }
@@ -181,7 +181,7 @@ nav a {
   .same__sec3:first-child::before {
     bottom: 24%;
   }
-}
+} */
 .second {
   margin-top: 4rem;
   margin-bottom: 6rem;
@@ -207,11 +207,11 @@ name of third */
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 24%;
+  bottom: 24vw;
 }
 .third::after {
   background-image: url(/bg-section-bottom-mobile-2.svg);
-  top: 100%;
+  top: 110vw;
 }
 .same__sec3 img {
   width: 80%;
@@ -219,7 +219,7 @@ name of third */
 }
 @media screen and (min-width: 600px) {
   .same__sec3 img {
-    width: 100%;
+    width: 80%;
     margin-bottom: 4rem;
   }
 }
