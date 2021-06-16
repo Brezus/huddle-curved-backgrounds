@@ -171,7 +171,7 @@ nav a {
 }
 .third:before {
   background-image: url(bg-section-top-mobile-2.svg);
-  bottom: 19%;
+  bottom: 18%;
 }
 .third:after {
   background-image: url(/bg-section-bottom-mobile-2.svg);
@@ -200,7 +200,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: -9vh;
+  top: -7%;
   width: 100%;
   height: 10rem;
 }
