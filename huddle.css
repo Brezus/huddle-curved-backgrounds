@@ -46,14 +46,23 @@ h1 + a {
 .large-img {
   width: 100%;
 }
+.same {
+  display: grid;
+  place-items: center;
+  grid-gap: 1.8rem;
+}
 /* this container holds everything on this page thus this controls the gap between each row or column */
 .grid-cont {
   display: grid;
   grid-gap: 6.5rem;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
 }
-
+.size {
+  width: 85%;
+  max-width: 700px;
+  margin: 0 auto;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -72,11 +81,6 @@ nav a {
   background: transparent;
 }
 /* second section start */
-.same {
-  display: grid;
-  place-items: center;
-  grid-gap: 1.8rem;
-}
 .stats-cont {
   margin: 6.2rem auto;
 }
@@ -115,7 +119,36 @@ nav a {
 /* increased the grid gap here and thanks to specificity it was possible i increased the grid gap for this section alone to 12rem */
 
 /* grow together start */
-
+.users {
+  display: grid;
+  grid-gap: 5rem;
+}
+.same__sec3 {
+  display: grid;
+  grid-gap: 2rem;
+}
+.first,
+.third {
+  background-color: var(--Very-Pale-Blue);
+  position: relative;
+}
+.first:before,
+.first:after {
+  width: 100%;
+  content: "";
+  background-image: url(bg-section-top-mobile-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 27vw;
+}
+.first:after {
+  background-image: url(bg-section-bottom-mobile-1.svg);
+  bottom: -107vw;
+}
 /* grow together end */
 /* newsletter section start */
 .b4__myfooter {
@@ -135,7 +168,7 @@ nav a {
 }
 .entire_foot:before {
   content: "";
-  background-image: url(/bg-footer-top-mobile.svg);
+  background-image: url(bg-footer-top-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
