@@ -138,6 +138,9 @@ nav a {
 .same__sec3 img {
   padding: 5.5rem 0;
 }
+.same__sec3 p {
+  padding-bottom: 2rem;
+}
 .first,
 .third {
   background-color: var(--Very-Pale-Blue);
@@ -159,7 +162,7 @@ nav a {
 }
 .first:after {
   background-image: url(bg-section-bottom-mobile-1.svg);
-  bottom: -107vw;
+  top: 100%;
 }
 /* grow together end */
 /* newsletter section start */
