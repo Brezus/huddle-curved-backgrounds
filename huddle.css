@@ -56,7 +56,6 @@ h1 + a {
   display: grid;
   grid-gap: 6.5rem;
   margin: 0 auto;
-  max-width: 700px;
 }
 .size {
   width: 85%;
@@ -126,6 +125,15 @@ nav a {
 .same__sec3 {
   display: grid;
   /* grid-gap: 6rem; */
+}
+.same__sec3 img {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.texts {
+  width: 85%;
+  margin: 0 auto;
 }
 .same__sec3 img {
   padding: ;
