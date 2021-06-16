@@ -307,8 +307,8 @@ nav a:hover {
   bottom: 98%;
   width: 100%;
   display: block;
-  border-left: 3px solid var(--Very-Dark-Cyan);
-  border-right: 3px solid var(--Very-Dark-Cyan);
+  border-left: 1px solid var(--Very-Dark-Cyan);
+  border-right: 1px solid var(--Very-Dark-Cyan);
 }
 
 .my__footer {
