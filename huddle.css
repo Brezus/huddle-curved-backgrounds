@@ -136,7 +136,7 @@ nav a {
   margin: 0 auto;
 }
 .same__sec3 img {
-  padding: ;
+  padding: 5.5rem 0;
 }
 .first,
 .third {
@@ -155,7 +155,7 @@ nav a {
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 27vw;
+  bottom: 19%;
 }
 .first:after {
   background-image: url(bg-section-bottom-mobile-1.svg);
