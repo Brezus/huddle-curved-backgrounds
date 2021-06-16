@@ -24,6 +24,9 @@
     font-size: 18px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -35,15 +38,15 @@ body {
 /* removed decoration from all anchor tags */
 a {
   text-decoration: none;
-  transition: 1s ease;
-}
-a:hover {
+  transition: 0.5s ease;
 }
 
-/* a:hover {
+.same a:hover,
+.in-put a:hover {
   background-color: var(--Light-Pink);
-  font-size: 0.8rem;
-} */
+  box-shadow: 0px 5px 10px rgba(141, 141, 141, 0.5),
+    0px 1px 5px rgba(128, 128, 128, 0.4);
+}
 
 p + a,
 h1 + a {
@@ -302,6 +305,10 @@ nav a:hover {
 .entire_foot > img {
   position: absolute;
   bottom: 98%;
+  width: 100%;
+  display: block;
+  border-left: 1px solid var(--Very-Dark-Cyan);
+  border-right: 1px solid var(--Very-Dark-Cyan);
 }
 
 .my__footer {
@@ -330,6 +337,11 @@ nav a:hover {
   grid-row: 1;
   border: none;
   border-radius: 4px;
+  padding: 0px 20px;
+}
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid var(--Light-Pink);
 }
 
 .in-put a {
@@ -361,6 +373,10 @@ nav a:hover {
 }
 .extra i {
   font-size: 2rem;
+  transition: 0.5s ease;
+}
+.extra i:hover {
+  color: rgb(0, 153, 255);
 }
 .extra-extra {
   display: grid;
