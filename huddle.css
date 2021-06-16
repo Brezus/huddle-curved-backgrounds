@@ -171,10 +171,10 @@ nav a {
 }
 .third:before {
   background-image: url(bg-section-top-mobile-2.svg);
-  bottom: 18%;
+  bottom: 17%;
 }
 .third:after {
-  background-image: url(/bg-section-bottom-mobile-2.svg);
+  background-image: url(bg-section-bottom-mobile-2.svg);
   top: 100%;
 }
 /* grow together end */
@@ -200,7 +200,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: -7%;
+  top: -6%;
   width: 100%;
   height: 10rem;
 }
