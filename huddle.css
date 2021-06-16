@@ -125,13 +125,17 @@ nav a {
 }
 .same__sec3 {
   display: grid;
-  grid-gap: 2rem;
+  /* grid-gap: 6rem; */
+}
+.same__sec3 img {
+  padding: ;
 }
 .first,
 .third {
   background-color: var(--Very-Pale-Blue);
   position: relative;
 }
+
 .first:before,
 .first:after {
   width: 100%;
