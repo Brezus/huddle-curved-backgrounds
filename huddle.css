@@ -21,7 +21,7 @@
 }
 @media screen and (min-width: 550px) {
   :root {
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 body {
@@ -191,7 +191,7 @@ nav a {
   background-image: url(bg-section-bottom-mobile-2.svg);
   top: 100%;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   .users {
     display: grid;
     grid-gap: 5rem;
@@ -200,25 +200,19 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 5rem;
-    /* grid-gap: 6rem; */
+    text-align: left;
   }
   .same__sec3 img {
-    width: 50%;
-    margin: 0 auto;
+    width: 40%;
   }
 
   .texts {
     width: 50%;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 600px;
+    display: grid;
+    grid-gap: 1rem;
   }
-  .same__sec3 img {
-    padding: 5.5rem 0;
-  }
-  .same__sec3 p {
-    padding-bottom: 2rem;
-  }
+
   .first,
   .third {
     background-color: var(--Very-Pale-Blue);
@@ -238,22 +232,31 @@ nav a {
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10%;
+    bottom: 17%;
   }
   .first:after {
     background-image: url(bg-section-bottom-desktop-1.svg);
     top: 100%;
   }
   .second p {
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
   }
   .third:before {
     background-image: url(bg-section-top-desktop-2.svg);
-    bottom: 10%;
+    bottom: 17%;
   }
   .third:after {
     background-image: url(bg-section-bottom-desktop-2.svg);
     top: 100%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .third:after {
+    bottom: 20%;
+  }
+  .third:before {
+    background-image: url(bg-section-top-desktop-2.svg);
+    bottom: 20%;
   }
 }
 /* grow together end */
@@ -342,7 +345,7 @@ nav a {
   grid-gap: 1.4rem;
   padding: 1rem 0;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   .entire_foot {
     background-color: var(--Very-Dark-Cyan);
     color: #ffffff;
