@@ -62,6 +62,13 @@ h1 + a {
   max-width: 700px;
   margin: 0 auto;
 }
+@media screen and (min-width: 550px) {
+  .size {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -177,6 +184,67 @@ nav a {
   background-image: url(bg-section-bottom-mobile-2.svg);
   top: 100%;
 }
+@media screen and (min-width: 550px) {
+  .users {
+    display: grid;
+    grid-gap: 5rem;
+  }
+  .same__sec3 {
+    display: grid;
+    /* grid-gap: 6rem; */
+  }
+  .same__sec3 img {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .texts {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .same__sec3 img {
+    padding: 5.5rem 0;
+  }
+  .same__sec3 p {
+    padding-bottom: 2rem;
+  }
+  .first,
+  .third {
+    background-color: var(--Very-Pale-Blue);
+    position: relative;
+  }
+
+  .first:before,
+  .first:after,
+  .third:before,
+  .third:after {
+    width: 100%;
+    content: "";
+    background-image: url(bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 19%;
+  }
+  .first:after {
+    background-image: url(bg-section-bottom-desktop-1.svg);
+    top: 100%;
+  }
+  .second p {
+    margin-bottom: 4rem;
+  }
+  .third:before {
+    background-image: url(bg-section-top-desktop-2.svg);
+    bottom: 17%;
+  }
+  .third:after {
+    background-image: url(bg-section-bottom-desktop-2.svg);
+    top: 100%;
+  }
+}
 /* grow together end */
 /* newsletter section start */
 .b4__myfooter {
@@ -203,6 +271,25 @@ nav a {
   top: -6%;
   width: 100%;
   height: 10rem;
+}
+@media screen and (min-width: 550px) {
+  .entire_foot {
+    background-color: var(--Very-Dark-Cyan);
+    color: #ffffff;
+    text-align: left;
+    padding: 6rem 0 2rem 0;
+    position: relative;
+  }
+  .entire_foot:before {
+    content: "";
+    background-image: url(bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -14%;
+    width: 100%;
+    height: 10rem;
+  }
 }
 .my__footer {
   width: 85%;
