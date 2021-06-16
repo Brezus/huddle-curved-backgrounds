@@ -152,6 +152,7 @@ nav a {
 .third {
   background-color: var(--Very-Pale-Blue);
   position: relative;
+  flex-direction: row-reverse;
 }
 
 .first:before,
@@ -190,7 +191,10 @@ nav a {
     grid-gap: 5rem;
   }
   .same__sec3 {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
     /* grid-gap: 6rem; */
   }
   .same__sec3 img {
