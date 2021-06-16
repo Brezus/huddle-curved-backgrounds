@@ -35,7 +35,14 @@ body {
 /* removed decoration from all anchor tags */
 a {
   text-decoration: none;
+  transition: 1s ease;
 }
+
+/* a:hover {
+  background-color: var(--Light-Pink);
+  font-size: 0.8rem;
+} */
+
 p + a,
 h1 + a {
   background-color: var(--Pink);
@@ -48,6 +55,12 @@ h1 + a {
   font-size: 0.9rem;
   font-weight: 700;
 }
+/* p + a:hover,
+h1 + a:hover {
+  background-color: var(--Light-Pink);
+  box-shadow: 0px 5px 10px rgba(141, 141, 141, 0.4),
+    0px 1px 5px rgba(128, 128, 128, 0.3);
+} */
 /* controls width of the large images */
 .large-img {
   width: 100%;
@@ -57,6 +70,12 @@ h1 + a {
   place-items: center;
   grid-gap: 1.8rem;
 }
+.same a:hover {
+  background-color: var(--Light-Pink);
+  box-shadow: 0px 5px 10px rgba(141, 141, 141, 0.4),
+    0px 1px 5px rgba(128, 128, 128, 0.3);
+}
+
 /* this container holds everything on this page thus this controls the gap between each row or column */
 .grid-cont {
   display: grid;
@@ -75,7 +94,7 @@ h1 + a {
     margin: 0 auto;
   }
 }
-nav {
+a nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,8 +108,14 @@ nav a {
   padding: 0.3em 1.2em;
   border: 1px solid var(--Light-Pink);
   border-radius: 30px;
-  box-shadow: 0px 0p 10px hsla(322, 100%, 66%, 0.856);
+  text-transform: capitalize;
   background: transparent;
+  transition: 0.5s ease-in;
+}
+nav a:hover {
+  box-shadow: 1px 2px 5px 5px rgba(165, 76, 173, 0.164);
+  color: rgba(165, 76, 173, 0.829);
+  border: 1px solid rgba(165, 76, 173, 0.747);
 }
 /* second section start */
 .stats-cont {
@@ -232,7 +257,7 @@ nav a {
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 17%;
+    bottom: 21%;
   }
   .first:after {
     background-image: url(bg-section-bottom-desktop-1.svg);
@@ -286,7 +311,7 @@ nav a {
 }
 .entire_foot > img {
   position: absolute;
-  bottom: 98%;
+  bottom: 80%;
 }
 
 .my__footer {
@@ -301,6 +326,11 @@ nav a {
 .news__letter {
   display: grid;
   grid-gap: 1rem;
+}
+.news__letter a:hover {
+  background-color: var(--Light-Pink);
+  box-shadow: 0px 5px 10px rgba(141, 141, 141, 0.4),
+    0px 1px 5px rgba(128, 128, 128, 0.3);
 }
 
 .in-put {
@@ -346,6 +376,10 @@ nav a {
 }
 .extra i {
   font-size: 2rem;
+  transition: 0.5s ease-in;
+}
+.extra i:hover {
+  color: rgb(0, 183, 255);
 }
 .extra-extra {
   display: grid;
